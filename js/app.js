@@ -348,7 +348,7 @@ tsParticles.load({
 			move: { radius: 10, type: "path" },
 			scale: 0.5,
 			type: "inline",
-			url: "https://pecylin.github.io/demo/images/smalldeer.svg"
+			url: "https://pecylin.github.io/demo/images/horse.svg"
 		}
 	}
 });
