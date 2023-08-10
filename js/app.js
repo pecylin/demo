@@ -3,7 +3,7 @@ tsParticles.load({
 	options: {
 		autoPlay: true,
 		background: {
-			color: { value: "#000000" },
+			color: { value: "#c7b38d" },
 			image: "",
 			position: "50% 50%",
 			repeat: "no-repeat",
@@ -348,7 +348,7 @@ tsParticles.load({
 			move: { radius: 10, type: "path" },
 			scale: 0.5,
 			type: "inline",
-			url: "https://pecylin.github.io/demo/images/google.svg"
+			url: "https://pecylin.github.io/demo/images/smalldeer.svg"
 		}
 	}
 });
