@@ -1,0 +1,71 @@
+.block{
+	display: block;
+}
+.inlineBlock{
+	display: inline-block;
+}
+.bold{
+	font-weight: bold;
+}
+.align{
+	&--center{
+		text-align: center;
+	}
+	&--left{
+		text-align: left;
+	}
+	&--right{
+		text-align: right;
+	}
+}
+.horizontalCenter{
+	margin: 0 auto;
+}
+.relative{
+	position: relative;
+}
+.sr-only{
+	width: 1px;
+	height: 1px;
+	display: inline-block;
+	position: absolute;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+section{
+	position: relative;
+}
+.w100{
+	width: 100%;
+}
+.w85{
+	width: 85%;
+}
+.w70{
+	width: 70%;
+}
+.w60{
+	width: 60%;
+}
+.w50{
+	width: 50%;
+}
+.flex{
+	display: flex;
+}
+.flexCenter{
+	justify-content: center;
+	align-items: center;
+}
+.alignItemCenter{
+	align-items: center;
+}
+.justifyCenter{
+	justify-content: center;
+}
+.justifyBetween{
+	justify-content: space-between;
+}
