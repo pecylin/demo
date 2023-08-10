@@ -3,7 +3,7 @@ tsParticles.load({
 	options: {
 		autoPlay: true,
 		background: {
-			color: { value: "#c7b38d" },
+			color: { value: "#000000" },
 			image: "",
 			position: "50% 50%",
 			repeat: "no-repeat",
@@ -17,12 +17,12 @@ tsParticles.load({
 		},
 		defaultThemes: {},
 		delay: 0,
-		fullScreen: { enable: true, zIndex: 1 },
+		fullScreen: { enable: false, zIndex: 1 },
 		detectRetina: false,
 		duration: 0,
 		fpsLimit: 120,
 		interactivity: {
-			detectsOn: "window",
+			detectsOn: "canvas",
 			events: {
 				onClick: { enable: false, mode: "push" },
 				onDiv: {
@@ -59,7 +59,7 @@ tsParticles.load({
 				},
 				connect: { distance: 80, links: { opacity: 0.5 }, radius: 60 },
 				grab: {
-					distance: 400,
+					distance: 800,
 					links: { blink: false, consent: false, opacity: 1 }
 				},
 				push: { default: true, groups: [], quantity: 4 },
@@ -101,7 +101,7 @@ tsParticles.load({
 				vertical: { random: { enable: false, minimumValue: 0.1 }, value: 1 }
 			},
 			collisions: {
-				absorb: { speed: 2 },
+				absorb: { speed: 1 },
 				bounce: {
 					horizontal: {
 						random: { enable: false, minimumValue: 0.1 },
@@ -229,7 +229,7 @@ tsParticles.load({
 					minimumValue: 0.1
 				}
 			},
-			stroke: { width: 0 },
+			stroke: { width: 1 },
 			zIndex: {
 				random: { enable: false, minimumValue: 0 },
 				value: 0,
