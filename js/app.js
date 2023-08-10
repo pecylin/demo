@@ -348,7 +348,7 @@ tsParticles.load({
 			move: { radius: 10, type: "path" },
 			scale: 0.5,
 			type: "inline",
-			url: "google.svg"
+			url: "https://pecylin.github.io/demo/images/google.svg"
 		}
 	}
 });
