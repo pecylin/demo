@@ -17,12 +17,12 @@ tsParticles.load({
 		},
 		defaultThemes: {},
 		delay: 0,
-		fullScreen: { enable: false, zIndex: 1 },
+		fullScreen: { enable: true, zIndex: 1 },
 		detectRetina: false,
 		duration: 0,
 		fpsLimit: 120,
 		interactivity: {
-			detectsOn: "canvas",
+			detectsOn: "window",
 			events: {
 				onClick: { enable: false, mode: "push" },
 				onDiv: {
@@ -59,7 +59,7 @@ tsParticles.load({
 				},
 				connect: { distance: 80, links: { opacity: 0.5 }, radius: 60 },
 				grab: {
-					distance: 800,
+					distance: 400,
 					links: { blink: false, consent: false, opacity: 1 }
 				},
 				push: { default: true, groups: [], quantity: 4 },
@@ -101,7 +101,7 @@ tsParticles.load({
 				vertical: { random: { enable: false, minimumValue: 0.1 }, value: 1 }
 			},
 			collisions: {
-				absorb: { speed: 1 },
+				absorb: { speed: 2 },
 				bounce: {
 					horizontal: {
 						random: { enable: false, minimumValue: 0.1 },
@@ -229,7 +229,7 @@ tsParticles.load({
 					minimumValue: 0.1
 				}
 			},
-			stroke: { width: 1 },
+			stroke: { width: 0 },
 			zIndex: {
 				random: { enable: false, minimumValue: 0 },
 				value: 0,
@@ -310,7 +310,7 @@ tsParticles.load({
 				distance: 30,
 				enable: true,
 				frequency: 1,
-				opacity: 0.4,
+				opacity: 0.8,
 				shadow: { blur: 5, color: { value: "#000" }, enable: false },
 				triangles: { enable: false, frequency: 1 },
 				width: 1,
@@ -348,7 +348,8 @@ tsParticles.load({
 			move: { radius: 10, type: "path" },
 			scale: 0.5,
 			type: "inline",
-			url: "https://pecylin.github.io/demo/images/horse.svg"
+			url: "https://pecylin.github.io/demo/images/horse.svg",
+			position: { x: 30, y: 10 }
 		}
 	}
 });
