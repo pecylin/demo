@@ -3,7 +3,7 @@ tsParticles.load({
 	options: {
 		autoPlay: true,
 		background: {
-			color: { value: "#09143d" },
+			color: { value: "#000000" },
 			image: "",
 			position: "50% 50%",
 			repeat: "no-repeat",
@@ -340,7 +340,7 @@ tsParticles.load({
 				stroke: {
 					color: { value: "rgba(255,255,255,0.2)" },
 					width: 0.5,
-					opacity: 0.15
+					opacity: 0.25
 				}
 			},
 			enable: true,
