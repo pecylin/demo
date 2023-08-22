@@ -340,7 +340,7 @@ tsParticles.load({
 				stroke: {
 					color: { value: "rgba(255,255,255,0.2)" },
 					width: 0.5,
-					opacity: 0.25
+					opacity: 0.15
 				}
 			},
 			enable: true,
