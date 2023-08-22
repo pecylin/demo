@@ -3,7 +3,7 @@ tsParticles.load({
 	options: {
 		autoPlay: true,
 		background: {
-			color: { value: "#000000" },
+			color: { value: "#09143d" },
 			image: "",
 			position: "50% 50%",
 			repeat: "no-repeat",
@@ -340,7 +340,7 @@ tsParticles.load({
 				stroke: {
 					color: { value: "rgba(255,255,255,0.2)" },
 					width: 0.5,
-					opacity: 0.2
+					opacity: 0.15
 				}
 			},
 			enable: true,
@@ -349,7 +349,7 @@ tsParticles.load({
 			scale: 0.5,
 			type: "inline",
 			url: "https://pecylin.github.io/demo/images/horse.svg",
-			position: { x: 30, y: 10 }
+			position: { x: 40, y: 10 }
 		}
 	}
 });
