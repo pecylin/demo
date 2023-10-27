@@ -48,7 +48,7 @@ tsParticles.load({
 					maxSpeed: 50,
 					speed: 1
 				},
-				bounce: { distance: 200 },
+				bounce: { distance: 180 },
 				bubble: {
 					distance: 40,
 					duration: 2,
@@ -59,7 +59,7 @@ tsParticles.load({
 				},
 				connect: { distance: 80, links: { opacity: 0.5 }, radius: 60 },
 				grab: {
-					distance: 400,
+					distance: 200,
 					links: { blink: false, consent: false, opacity: 1 }
 				},
 				push: { default: true, groups: [], quantity: 4 },
@@ -307,13 +307,13 @@ tsParticles.load({
 				blink: false,
 				color: { value: "#ffffff" },
 				consent: false,
-				distance: 30,
+				distance: 52,
 				enable: true,
 				frequency: 1,
-				opacity: 0.8,
+				opacity: 0.6,
 				shadow: { blur: 5, color: { value: "#000" }, enable: false },
 				triangles: { enable: false, frequency: 1 },
-				width: 1,
+				width: 0.5,
 				warp: false
 			},
 			repulse: {
@@ -339,14 +339,14 @@ tsParticles.load({
 				enable: true,
 				stroke: {
 					color: { value: "rgba(255,255,255,0.2)" },
-					width: 0.5,
-					opacity: 0.4
+					width: 0.2,
+					opacity: 0.3
 				}
 			},
 			enable: true,
 			inline: { arrangement: "equidistant" },
 			move: { radius: 10, type: "path" },
-			scale: 0.5,
+			scale: 0.7,
 			type: "inline",
 			url: "https://pecylin.github.io/demo/images/horse.svg",
 			position: { x: 40, y: 10 }
