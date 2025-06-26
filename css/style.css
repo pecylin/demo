@@ -82,6 +82,7 @@ body{
 }
 .title-bg-large{
   width: 25vw;
+  margin-top: var(--space-unit);
 }
 .text-description{
   font-size: var(--text-size-md);
