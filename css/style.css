@@ -17,7 +17,7 @@
   --text-size-lg: calc(1.25*var(--text-base-size));
   --text-size-xl: calc(1.5*var(--text-base-size));
 
-  --space-unit: 16px;
+  --space-unit: 1em;
   --space-xxs: calc(0.25*var(--space-unit));/*4*/
   --space-xs: calc(0.5*var(--space-unit));/*8*/
   --space-md: calc(1.5*var(--space-unit));/*24*/
@@ -108,6 +108,12 @@ body{
 }
 .btn-large{
   font-size: var(--text-size-xl);
+  font-weight: 700;
+}
+.btn-playAgain{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
   font-weight: 700;
 }
 .kv{
@@ -234,9 +240,15 @@ body{
 }
 .shareBtn{
   width: fit-content;
+  display: flex;
+  margin-top: var(--space-unit);
 }
 .shareBtn-item{
   display: inline-block;
+  margin-left: var(--space-xs);
+}
+.shareBtn-item:first-child{
+  margin-left: 0;
 }
 .shareBtn-item-icon{
   padding: var(--space-xxs) var(--space-xs);
@@ -244,8 +256,8 @@ body{
   border-radius: 16px;
 }
 .shareBtn-item-icon svg{
-  width: 40px;
-  height: 40px;
+  width: 2em;
+  height: 2em;
 }
 .chart{
       width:90%;
@@ -255,6 +267,11 @@ body{
 .chart-1{
   background: url(../images/chart-1.png) no-repeat center 0;
   background-size: 100%;
+}
+.icon-playAgain{
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
 }
 
 @media (max-width: 1440px) {
