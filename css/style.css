@@ -165,12 +165,70 @@ body{
   height: auto;
   position: relative;
   aspect-ratio: 11/9;
+  margin-top: -40px;
   z-index: 5;
 }
-.kv-result1{
+.tag{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 0;
+}
+.result-1 .tag{
+  align-items: self-end;
+}
+.result-2 .tag{
+  align-items: self-start;
+}
+.tag-item{
+  display: flex;
+  background-color: var(--surface-hightlight);
+  font-size: var(--text-base-size);
+  padding: 0 var(--space-xs);
+  margin-bottom: var(--space-xs);
+  transform: skew(15deg);
+}
+.result-1 .kv-result{
   background:url(../images/result-1.png) no-repeat top right;
   background-size: 100%;
-  margin-top: -40px;
+}
+.result-2 .kv-result{
+  background:url(../images/result-2.png) no-repeat top right;
+  background-size: 100%;
+}
+.result-3 .kv-result{
+  background:url(../images/result-3.png) no-repeat top right;
+  background-size: 100%;
+}
+.result-4 .kv-result{
+  background:url(../images/result-4.png) no-repeat top right;
+  background-size: 100%;
+}
+.result-5 .kv-result{
+  background:url(../images/result-5.png) no-repeat top right;
+  background-size: 100%;
+}
+.result-1 .tag-result{
+  top: 13.5em;
+  left: 4.5em;
+}
+.result-2 .tag-result{
+  top: 14.5em;
+  left: 29em;
+}
+.result-3 .tag-result{
+  top: 16.3em;
+  left: 4.5em;
+}
+.result-1 .tag-item{
+  padding-right: var(--space-xl);
+}
+.result-2 .tag-item{
+  /*padding-right: var(--space-xl);*/
+  padding-left: var(--space-unit);
+}
+.result-3 .tag-item{
+  padding-right: var(--space-xl);
 }
 .text-question{
   font-size: var(--text-size-lg);
@@ -216,28 +274,6 @@ body{
   width: 100%;
   text-align: center;
 }
-.tag{
-  display: flex;
-  flex-direction: column;
-  align-items: self-end;
-  position: absolute;
-  z-index: 0;
-}
-.tag-item{
-  display: flex;
-  background-color: var(--surface-hightlight);
-  font-size: var(--text-base-size);
-  padding: 0 var(--space-xs);
-  margin-bottom: var(--space-xs);
-  transform: skew(15deg);
-}
-.tag-result1{
-  top: 13.5em;
-  left: 4.5em;
-}
-.tag-result1 .tag-item{
-  padding-right: var(--space-xl);
-}
 .shareBtn{
   width: fit-content;
   display: flex;
@@ -264,14 +300,35 @@ body{
   height: 2em;
 }
 .chart{
-      width:90%;
+      width:100%;
       height: auto;
-      aspect-ratio: 1/1;
+      text-align: center;
+      margin: var(--space-unit) 0;
 }
-.chart-1{
+.chart-img{
+  width: 85%;
+  display: inline-block;
+}
+/* .result-1 .chart{
   background: url(../images/chart-1.png) no-repeat center 0;
   background-size: 100%;
 }
+.result-2 .chart{
+  background: url(../images/chart-2.png) no-repeat center 0;
+  background-size: 100%;
+}
+.result-3 .chart{
+  background: url(../images/chart-3.png) no-repeat center 0;
+  background-size: 100%;
+}
+.result-4 .chart{
+  background: url(../images/chart-4.png) no-repeat center 0;
+  background-size: 100%;
+}
+.result-5 .chart{
+  background: url(../images/chart-5.png) no-repeat center 0;
+  background-size: 100%;
+} */
 .icon-playAgain{
   width: 1.5em;
   height: 1.5em;
@@ -317,17 +374,43 @@ body{
       height: auto;
       aspect-ratio: 1/1;
     }
-    .kv-result1{
+    .result-1 .kv-result{
       background: url(../images/m-result-1.png) no-repeat center center;
+      background-size: 100%;
+    }
+    .result-2 .kv-result{
+      background: url(../images/m-result-2.png) no-repeat center center;
+      background-size: 100%;
+    }
+    .result-3 .kv-result{
+      background: url(../images/m-result-3.png) no-repeat center center;
+      background-size: 100%;
+    }
+    .result-4 .kv-result{
+      background: url(../images/m-result-4.png) no-repeat center center;
+      background-size: 100%;
+    }
+    .result-5 .kv-result{
+      background: url(../images/m-result-5.png) no-repeat center center;
       background-size: 100%;
     }
     .tag{
       width: fit-content;
       z-index: 10;
     }
-    .tag-result1{
+    .result-1 .tag-result{
       top: 45vw;
       left: -16px;
+    }
+    .result-2 .tag-result{
+      align-items: self-end;
+      top: 45vw;
+      left: 15px;
+    }
+    .result-3 .tag-result{
+      align-items: self-start;
+      top: 52vw;
+      left: 178px;
     }
     .tag-item{
       padding: 0 var(--space-xs) !important;
