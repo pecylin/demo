@@ -10,6 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
+	<script src="js/quiz.js"></script>
 	<title>這不是劇，是你每天演的戲</title>
 </head>
 
@@ -24,7 +25,7 @@
 				<div class="title-bg"></div>
 			</div>
 			<!-- q1-->
-			<div class="flex alignCenter" style="display: none;">
+			<div class="flex alignCenter" style="display: flex;">
 				<p class="progress">1/8</p>
 				<div class="kv-q kv-q1"></div>
 				<p class="text-question">Q1:你跟同事一起提案，主管只稱讚你，你會：</p>
@@ -63,15 +64,15 @@
 				<div class="kv-q kv-q3"></div>
 				<p class="text-question">Q3:你聽到有人在講主管的八卦時？</p>
 				<ul class="questionList">
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">A. 馬上離開，沒興趣</a>
-					</li>
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">B.
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">A.
 							假裝沒聽見，但默默地在角落裝忙不離開</a>
 					</li>
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">C.
-							「真的假的?」內心OS:拜託再多說一點</a></li>
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">D.
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">B.
 							參與大家的討論，轉身立刻告訴主管</a></li>
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">C. 馬上離開，沒興趣</a>
+					</li>
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">D.
+							「真的假的?」內心OS:拜託再多說一點</a></li>
 				</ul>
 			</div>
 			<!-- q4-->
@@ -80,14 +81,14 @@
 				<div class="kv-q kv-q4"></div>
 				<p class="text-question">Q4:遇到你不喜歡的同事發表意見時，你會？</p>
 				<ul class="questionList">
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">A. 指出問題並給建議</a>
-					</li>
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">B. 安靜不發表意見</a>
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">A.
+							表面微笑贊同，背後白眼翻到後腦勺</a></li>
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">B. 指出問題並給建議</a>
 					</li>
 					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">C.
-							表面微笑贊同，背後白眼翻到後腦勺</a></li>
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">D.
 							私下和主管說那提案可能會出問題</a></li>
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">D. 安靜不發表意見</a>
+					</li>
 				</ul>
 			</div>
 			<!-- q5-->
@@ -114,14 +115,13 @@
 				<div class="kv-q kv-q6"></div>
 				<p class="text-question">Q6:公司準備拍形象照，你穿：</p>
 				<ul class="questionList">
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">A. 穿著乾淨正式的基本款</a>
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">A.穿著乾淨正式的基本款</a>
 					</li>
 					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">B.
-							拍完就盯攝影師：「可以幫我修一下那個角
-							度嗎～」</a>
+							拍完就盯攝影師：「可以幫我修一下那個角度嗎～」</a>
 					</li>
 					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">C.
-							挑能顯瘦又不失專業的look，還先補妝</a></li>
+							挑能顯瘦又不失專業的look,還先補妝</a></li>
 					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">D.
 							套裝造型提前設計過，笑容還偷練過</a></li>
 				</ul>
@@ -133,20 +133,20 @@
 				<p class="text-question">Q7:你剛遲到一點，主管正在茶水間，你會：</p>
 				<ul class="questionList">
 					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">A.
-							頭低低快飄過，當自己是氣體</a>
-					</li>
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">B.
 							假裝早就到公司，只是剛剛出去買咖啡</a>
 					</li>
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">C.
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">B.
 							一邊講電話一邊坐下，嘴上還假裝還在與客
 							戶通電話</a></li>
-					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">D.
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">C.
 							自然而然與主管搭話，假裝什麼事都沒發生</a></li>
+					<li class="questionList-item"><a href="javascript:;" class="btn btn-default block">D.
+							頭低低快飄過，當自己是氣體</a>
+					</li>
 				</ul>
 			</div>
 			<!-- q8-->
-			<div class="flex alignCenter" style="display: flex;">
+			<div class="flex alignCenter" style="display: none;">
 				<p class="progress">8/8</p>
 				<div class="kv-q kv-q8"></div>
 				<p class="text-question">Q8:發現自己和主管撞衫，你會？</p>

@@ -280,6 +280,7 @@ body{
 .text-result{
   width: 100%;
   text-align: center;
+  margin-top: var(--space-xs);
 }
 .shareBtn{
   width: fit-content;
@@ -374,6 +375,8 @@ body{
       background-size: 100%;
     }
     .result-4 .kv-result{
+      height: auto;
+      aspect-ratio: 11/10;
       background: url(../images/m-result-4.png) no-repeat center center;
       background-size: 100%;
     }
@@ -401,8 +404,8 @@ body{
     }
     .result-4 .tag-result{
       align-items: self-start;
-      top: 52vw;
-      left: 178px;
+      top: 46vw;
+      left: 200px;
     }
     .tag-item{
       padding: 0 var(--space-xs) !important;
