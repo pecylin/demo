@@ -220,6 +220,10 @@ body{
   top: 16.3em;
   left: 4.5em;
 }
+.result-4 .tag-result{
+  top: 5.5em;
+  left: 23.3em;
+}
 .result-1 .tag-item{
   padding-right: var(--space-xl);
 }
@@ -229,6 +233,9 @@ body{
 }
 .result-3 .tag-item{
   padding-right: var(--space-xl);
+}
+.result-4 .tag-item{
+  padding-left: var(--space-unit);
 }
 .text-question{
   font-size: var(--text-size-lg);
@@ -309,26 +316,6 @@ body{
   width: 85%;
   display: inline-block;
 }
-/* .result-1 .chart{
-  background: url(../images/chart-1.png) no-repeat center 0;
-  background-size: 100%;
-}
-.result-2 .chart{
-  background: url(../images/chart-2.png) no-repeat center 0;
-  background-size: 100%;
-}
-.result-3 .chart{
-  background: url(../images/chart-3.png) no-repeat center 0;
-  background-size: 100%;
-}
-.result-4 .chart{
-  background: url(../images/chart-4.png) no-repeat center 0;
-  background-size: 100%;
-}
-.result-5 .chart{
-  background: url(../images/chart-5.png) no-repeat center 0;
-  background-size: 100%;
-} */
 .icon-playAgain{
   width: 1.5em;
   height: 1.5em;
@@ -408,6 +395,11 @@ body{
       left: 15px;
     }
     .result-3 .tag-result{
+      align-items: self-start;
+      top: 52vw;
+      left: 178px;
+    }
+    .result-4 .tag-result{
       align-items: self-start;
       top: 52vw;
       left: 178px;
