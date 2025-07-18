@@ -97,7 +97,7 @@ body{
   border-radius: 40px;
   border: 3px #000 solid;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 1);
-  padding: var(--space-xs) var(--space-md);
+  padding: var(--space-xxs) var(--space-md);
 }
 .btn-yellow{
   background-color: var(--surface-hightlight);
@@ -117,48 +117,16 @@ body{
   font-weight: 700;
 }
 .kv{
-  width: 100%;
+  width: 85%;
   height: auto;
-  aspect-ratio: 8/3;
-  background: url(../images/kv.png) no-repeat center 0;
-  background-size: contain;
+  display: block;
+  margin: 0 auto;
 }
 .kv-q{
-  width: 28vw;
+  width: 35vw;
   height: auto;
-  aspect-ratio: 10/7;
-}
-.kv-q1{
-  background: url(../images/Q-1.png) no-repeat center 0;
-  background-size: 100%;
-}
-.kv-q2{
-  background: url(../images/Q-2.png) no-repeat center 0;
-  background-size: 100%;
-}
-.kv-q3{
-  background: url(../images/Q-3.png) no-repeat center 0;
-  background-size: 100%;
-}
-.kv-q4{
-  background: url(../images/Q-4.png) no-repeat center 0;
-  background-size: 100%;
-}
-.kv-q5{
-  background: url(../images/Q-5.png) no-repeat center 0;
-  background-size: 100%;
-}
-.kv-q6{
-  background: url(../images/Q-6.png) no-repeat center 0;
-  background-size: 100%;
-}
-.kv-q7{
-  background: url(../images/Q-7.png) no-repeat center 0;
-  background-size: 100%;
-}
-.kv-q8{
-  background: url(../images/Q-8.png) no-repeat center 0;
-  background-size: 100%;
+  display: block;
+  margin: 0 auto;
 }
 .kv-result{
   width: 90%;
@@ -250,7 +218,7 @@ body{
   padding-right: var(--space-unit);
 }
 .text-question{
-  font-size: var(--text-size-lg);
+  font-size: var(--text-size-md);
   font-weight: 700;
   margin: var(--space-xs) 0 var(--space-xs) 0;
   text-align: center;
@@ -343,7 +311,7 @@ body{
       width: 40vw;
   }
   .kv-q{
-    width: 36vw;
+    width: 40vw;
   }
 }
 
@@ -354,20 +322,17 @@ body{
       height: 42px;
     }
     .title-bg{
-      width: 68vw;
+      width: 65vw;
     }
     .title-bg-large{
       width: 96vw;
     }
     .kv{
-      width: 96vw;
+      width: 80%;
       height: auto;
-      aspect-ratio: 3/2;
-      background: url(../images/m-kv.png) no-repeat center 0;
-      background-size: contain;
     }
     .kv-q{
-      width: 96vw;
+      width: 80%;
     }
     .kv-result{
       width: 100%;
