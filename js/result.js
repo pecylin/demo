@@ -24,18 +24,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Facebook 分享功能
   const fbBtns = document.querySelectorAll('.btn-fb');
+  // 對應每個結果的分享圖片
+  const shareImages = [
+    'images/share-result1.png',
+    'images/share-result2.png',
+    'images/share-result3.png',
+    'images/share-result4.png',
+    'images/share-result5.png',
+  ];
+  const shareText = encodeURIComponent('趕快來玩心理測驗');
+  const shareLink = '';
   fbBtns.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
-      // 找到最近的 result 區塊
-      let resultBlock = btn.closest('[class^="result-"]');
-      if (!resultBlock) return;
-      // 找到圖片連結
-      let img = resultBlock.querySelector('.shareBtn-item.btn-yellow[href$=".png"]');
-      let imgUrl = img ? (img.getAttribute('href') || '') : '';
-      if (!imgUrl) return;
-      // Facebook 分享連結
-      let fbShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.origin + imgUrl);
+      // 直接用 resultIdx 對應圖片
+      let imgUrl = window.location.origin + '/' + shareImages[resultIdx];
+      // Facebook 分享連結，帶入圖片與文字，連結為空
+      let fbShareUrl =
+        'https://www.facebook.com/sharer/sharer.php?u=' +
+        encodeURIComponent(shareLink) +
+        '&quote=' + shareText +
+        '&picture=' + encodeURIComponent(imgUrl);
       window.open(fbShareUrl, '_blank', 'width=600,height=400');
     });
   });
