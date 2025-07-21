@@ -2,6 +2,7 @@
 // 這裡僅做範例，請根據實際邏輯調整
 
 document.addEventListener('DOMContentLoaded', function () {
+  // 分數顯示邏輯
   const scores = JSON.parse(localStorage.getItem('quizScores') || '[]');
   let total = 0;
   if (scores.length > 0) {
@@ -19,5 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
   const resultBlocks = document.querySelectorAll('.content > div[class^="result-"]');
   resultBlocks.forEach((block, i) => {
     block.style.display = i === resultIdx ? 'flex' : 'none';
+  });
+
+  // Facebook 分享功能
+  const fbBtns = document.querySelectorAll('.btn-fb');
+  fbBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      // 找到最近的 result 區塊
+      let resultBlock = btn.closest('[class^="result-"]');
+      if (!resultBlock) return;
+      // 找到圖片連結
+      let img = resultBlock.querySelector('.shareBtn-item.btn-yellow[href$=".png"]');
+      let imgUrl = img ? (img.getAttribute('href') || '') : '';
+      if (!imgUrl) return;
+      // Facebook 分享連結
+      let fbShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.origin + imgUrl);
+      window.open(fbShareUrl, '_blank', 'width=600,height=400');
+    });
   });
 });
