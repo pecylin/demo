@@ -1,11 +1,14 @@
 :root {
   --color-brand: #ff0266;
   --color-yellow:#f4e827;
+  --color-white:#ffffff;
   --color-n50:#999999;
+  --color-n60:#666666;
   --color-n80:#444444;
 
   --text-primary:#000;
   --text-secondary: var(--color-n50);
+  --text-thirdary: var(--color-n60);
   --surface-hightlight: var(--color-yellow);
   --surface-button: var(--color-n80);
   --surface-button-actived: var(--color-yellow);
@@ -70,6 +73,11 @@ body{
 }
 .content{
   margin-top: -16px;
+  margin-bottom: var(--space-xl);
+}
+.h2{
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xs);
 }
 .title-bg{
   width: 20vw;
@@ -131,10 +139,13 @@ body{
 .kv-result{
   width: 90%;
   height: auto;
+  display: block;
   position: relative;
-  aspect-ratio: 11/9;
-  margin-top: -40px;
+  margin: -40px auto 0 auto;
   z-index: 5;
+}
+.result-4 .kv-result{
+  margin-top: -75px;
 }
 .tag{
   display: flex;
@@ -159,47 +170,25 @@ body{
   margin-bottom: var(--space-xs);
   transform: skew(15deg);
 }
-.result-1 .kv-result{
-  background:url(../images/result-1.png) no-repeat top right;
-  background-size: 100%;
-}
-.result-2 .kv-result{
-  background:url(../images/result-2.png) no-repeat top right;
-  background-size: 100%;
-}
-.result-3 .kv-result{
-  background:url(../images/result-3.png) no-repeat top right;
-  background-size: 100%;
-}
-.result-4 .kv-result{
-  background:url(../images/result-4.png) no-repeat top right;
-  background-size: 100%;
-}
-.result-5 .kv-result{
-  height: auto;
-  aspect-ratio: 1/1;
-  background:url(../images/result-5.png) no-repeat top right;
-  background-size: 100%;
-}
 .result-1 .tag-result{
   top: 13.5em;
   left: 4.5em;
 }
 .result-2 .tag-result{
-  top: 14.5em;
-  left: 29em;
+  top: 13.5em;
+  left: 28.3em;
 }
 .result-3 .tag-result{
   top: 16.3em;
-  left: 4.5em;
+  left: 3em;
 }
 .result-4 .tag-result{
-  top: 5.5em;
-  left: 23.3em;
+  top: 13.5em;
+  right: 0.5em;
 }
 .result-5 .tag-result{
-  top: 11.5em;
-  left: 2.3em;
+  top: 10.5em;
+  left: 2.8em;
 }
 .result-1 .tag-item{
   padding-right: var(--space-xl);
@@ -294,7 +283,7 @@ body{
       margin: var(--space-unit) 0;
 }
 .chart-img{
-  width: 85%;
+  width: 78%;
   display: inline-block;
 }
 .icon-playAgain{
@@ -302,6 +291,44 @@ body{
   height: 1.5em;
   display: inline-block;
 }
+.filmList{
+  width: 90%;
+  max-width: 640px;
+  display: grid;
+  background-color: var(--color-white);
+  grid-template-columns: repeat(3, 1fr); /* 3欄 */
+  grid-template-rows: repeat(2, auto);   /* 2列 */
+  gap: var(--space-xs); /* 可選的間距 */
+  padding: var(--space-unit);
+  border-radius: 16px;
+}
+.filmList-item {
+  padding: var(--space-xs);
+  font-size: 1rem;
+  border-radius: 4px;
+}
+.filmList-item > a{
+  text-decoration: none;
+}
+.filmList-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+.filmList-title, .filmList-subTitle{
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.filmList-title{
+  color: var(--text-primary);
+}
+.filmList-subTitle{
+  color: var(--text-thirdary);
+  font-size: var(--text-size-xs);
+} 
 
 @media (max-width: 1440px) {
   .title-bg{
@@ -316,7 +343,7 @@ body{
 }
 
 /*----- 768以下 -----*/
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     .logo{
       width: 68px;
       height: 42px;
@@ -337,31 +364,9 @@ body{
     .kv-result{
       width: 100%;
       height: auto;
-      aspect-ratio: 1/1;
-    }
-    .result-1 .kv-result{
-      background: url(../images/m-result-1.png) no-repeat center center;
-      background-size: 100%;
-    }
-    .result-2 .kv-result{
-      background: url(../images/m-result-2.png) no-repeat center center;
-      background-size: 100%;
-    }
-    .result-3 .kv-result{
-      background: url(../images/m-result-3.png) no-repeat center center;
-      background-size: 100%;
     }
     .result-4 .kv-result{
-      height: auto;
-      aspect-ratio: 11/10;
-      background: url(../images/m-result-4.png) no-repeat center center;
-      background-size: 100%;
-    }
-    .result-5 .kv-result{
-      height: auto;
-      aspect-ratio: 11/12;
-      background: url(../images/m-result-5.png) no-repeat center center;
-      background-size: 100%;
+      margin-top: -40px;
     }
     .tag{
       width: fit-content;
@@ -379,20 +384,26 @@ body{
     .result-3 .tag-result{
       align-items: self-start;
       top: 52vw;
-      left: 178px;
+      left: auto;
+      right: 20px;
     }
     .result-4 .tag-result{
       align-items: self-start;
-      top: 46vw;
-      left: 200px;
+      top: 44vw;
+      left: auto;
+      right: 10px;
     }
     .result-5 .tag-result{
       align-items: self-start;
       top: 31vw;
-      left: 200px;
+      left: auto;
+      right: 45px;
     }
     .tag-item{
       padding: 0 var(--space-xs) !important;
       font-size: var(--text-size-xs);
+    }
+    .chart-img{
+      width: 90%;
     }
 }
