@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
   resultBlocks.forEach((block, i) => {
     block.style.display = i === resultIdx ? 'flex' : 'none';
   });
+
+  const hashArr = ['#result1', '#result2', '#result3', '#result4', '#result5'];
+  if (window.location.hash !== hashArr[resultIdx]) {
+    history.replaceState(null, '', hashArr[resultIdx]);
+  }
 });
 
 // 離開 result.html 時清除分數
